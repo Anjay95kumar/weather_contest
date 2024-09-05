@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=a70993c816dbb5008d66bd73f4d28874"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Weather App</h1>
+        <p>Here is your current location</p>
+        <button id="fetchDataBtn">Fetch Data</button>
+
+        <div id="locationInfo" class="hidden">
+            <p>Lat: <span id="latitude"></span></p>
+            <p>Long: <span id="longitude"></span></p>
+        </div>
+
+        <div id="mapError" class="hidden">
+            <p>Oops! Something went wrong. This page didn't load Google Maps correctly. See the JavaScript console for technical details.</p>
+        </div>
+
+        <div id="map" class="hidden"></div>
+
+        <div id="weatherData" class="hidden">
+            <h2>Your Weather Data</h2>
+            <p>Location: <span id="locationName"></span></p>
+            <p>Wind Speed: <span id="windSpeed"></span> km/h</p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Temperature: <span id="temperature"></span>°C</p>
+            <p>Pressure: <span id="pressure"></span> hPa</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
